@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  dockerimageprofanity:
+    image: dockerimageprofanity
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 5007:5007
