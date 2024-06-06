@@ -7,8 +7,8 @@ app = Flask(__name__)
 
 # Load the model and the feature extractor
 # model_name = r"D:\Rohit\Image_Profanity\vit-base-profanity-demo-v5-2"
-model = AutoModelForImageClassification.from_pretrained("GunMan0410/Image_Profanity")
-feature_extractor = AutoFeatureExtractor.from_pretrained("GunMan0410/Image_Profanity")
+model = AutoModelForImageClassification.from_pretrained("LinkCxO-Abhishekk/VIT_ImageProfane_FineTuned_V2.3")
+feature_extractor = AutoFeatureExtractor.from_pretrained("LinkCxO-Abhishekk/VIT_ImageProfane_FineTuned_V2.3")
 
 def predict(image):
     """ Run model prediction on the passed image and return top class """
